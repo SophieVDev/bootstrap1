@@ -30,17 +30,29 @@
 }
 
 #mouseBtn i{
+    color: white;
     font-size: 40px;
-    transform: rotate(180deg);
     position: absolute;
     bottom: 30px;
-    right: 50%;
-    transform: translateX(50%, -50%);
+    transform: translateX(-50%, -50%) rotate(180deg);
     transition: 0.5s
 }
 
 
 #mouseBtn i:hover{
-transform: scale(2);
+    bottom: 30px;
+    font-size: 50px;
+    transform: translateX(-50%, -50%) rotate(0deg);
 cursor: pointer;
+}
+
+.btn-social-share{
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+}
+
+.all-competences .card-img-top{
+    max-width: 100px;
+    margin: auto;
 }
