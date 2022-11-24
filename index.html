@@ -17,17 +17,17 @@
   <!text light pour texte en blanc!>
     <header>
       <nav id="navbarSite" class="position-fixed navbar navbar-expand-lg navbar-dark bg-transarent w-100">
-        <! navbar dark popur du blanc !>
+        <!--navbar dark popur du blanc-->
           <div class="container-fluid">
             <a class="navbar-brand" href="./index.html">
               <i class="bi bi-code-slash"></i> SITIFY
             </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
-              aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+              aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
               <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-              <ul class="nav navbar-nav">
+              <ul class="navbar-nav">
                 <li class="nav-item">
                   <a class="nav-link" aria-current="page" href="#accueil">Accueil</a>
                 </li>
@@ -35,7 +35,10 @@
                   <a class="nav-link" aria-current="page" href="#about">Qui suis-je ?</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" aria-current="page" href="#competences">Competences</a>
+                  <a class="nav-link" href="#competences">Competences</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#temoignages">Témoignages</a>
                 </li>
                 <li class="nav-item">
                   <a class="nav-link" href="#realisation">Réalisation</a>
@@ -52,18 +55,19 @@
     </header>
 
 
-    <main class="">
-      <section id="firstRowHomePage">
+    <main class="main-content-website">
+      <!--Accueil-->
+      <section id="accueil">
         <div class="container-fluid">
-          <div class="row row-cols-1">
-            <div class="d-flex justify-content-center text-center" id="text-presentation">
+          <div class="row row-cols-1" id="firstRowHomePage">
+            <div class="d-flex justify-content-center flex-column text-center" id="text-presentation">
               <div class="text-bienvenue"> BIENVENUE ! </div>
               <div class="big-text">Je suis Développeur</div>
               <p class="description">Je m'appelle Sophie Vercoutter et je suis développeur depuis 2017.</p>
               <div class="btn-container">
                 <a href="./images/CV SOPHIE VERCOUTTER 2022.pdf" target="_blank" class="btn btn-outline-info">Télécharger mon CV</a>
                 </div>
-            <a class="" id="mouseBtn">
+            <div class="" id="mouseBtn">
               <a href="#about"><i class="bi bi-mouse"></i></a>
             </div>
             </div>
@@ -109,8 +113,9 @@
 <div class=" mt-5 mb-5 row text-center">
   <h2>Mes compétences</h2>
     <p class="text-secondary">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repudiandae, aperiam repellat. Cumque sequi hic nulla.</p>
-      <div class="all-competences mt-4 row row-cols-1 row-cols-sm-2 row-cols-md-3 ">
-        <div class="card bg-dark p-3 border-light ">
+      <div class="mt-4 row row-cols-1 row-cols-sm-2 row-cols-md-3 all-competences ">
+<div class="p-3">
+        <div class="card bg-dark p-3 border-light h-100 ">
             <img src="./images/html.png" class="card-img-top">
             <div class="card-body>
             <h5 class="card-title">HTML</h5>
@@ -124,8 +129,10 @@
             <i class="bi bi-star-fill"></i>
           </div>
         </div>
+      </div>
 
-        <div class="card bg-dark p-3 border-light">
+      <div class="p-3">
+        <div class="card bg-dark p-3 border-light h-100">
           <img src="./images/css.png" class="card-img-top">
           <div class="card-body>
           <h5 class="card-title">CSS</h5>
@@ -139,8 +146,10 @@
           <i class="bi bi-star-fill"></i>
         </div>
       </div>
+    </div>
 
-      <div class="card bg-dark p-3 border-light">
+    <div class="p-3">
+      <div class="card bg-dark p-3 border-light h-100">
         <img src="./images/js.png" class="card-img-top">
         <div class="card-body>
         <h5 class="card-title">JS</h5>
@@ -152,9 +161,10 @@
         <i class="bi bi-star-fill"></i>
       </div>
     </div>
+  </div>
 
-
-    <div class="card bg-dark p-3 border-light">
+<div class="p-3">
+    <div class="card bg-dark p-3 border-light h-100">
       <img src="./images/java.png" class="card-img-top">
       <div class="card-body>
       <h5 class="card-title">JAVA</h5>
@@ -165,9 +175,10 @@
       <i class="bi bi-star-fill"></i>
     </div>
   </div>
+</div>
 
-
-  <div class="card bg-dark p-3 border-light">
+<div class="p-3">
+  <div class="card bg-dark p-3 border-light h-100">
     <img src="./images/python.png" class="card-img-top">
     <div class="card-body>
     <h5 class="card-title">PYTHON</h5>
@@ -179,9 +190,10 @@
     <i class="bi bi-star"></i>
   </div>
 </div>
+</div>
 
-
-<div class="card bg-dark p-3 border-light">
+<div class="p-3">
+<div class="card bg-dark p-3 border-light h-100">
   <img src="./images/GitHub-Logo.png" class="card-img-top">
   <div class="card-body>
   <h5 class="card-title">GITHUB</h5>
@@ -191,13 +203,84 @@
   <i class="bi bi-star-fill"></i>
   <i class="bi bi-star"></i>
   <i class="bi bi-star"></i>
+
 </div>
 </div>
-        
-      </div>
+</div>
+</div>
 </div>
 </div>
 </section>
+
+
+<!--Je suis disopnible-->
+<section class="py-5 text-center" id="available">
+  <div class="py-3">
+  <h2 class="pb-3">Je suis disponible en tant que freelance</h2>
+  <p>
+  <button class="btn btn-danger">M'embaucher</button>
+</p>
+</div>
+</section>
+
+<!--Témoignages-->
+<section class="py-5 text-center" id="temoignages">
+  <div class="container py-3">
+    <h2 class="mb-5">Témoignages</h2>
+    <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-indicators mb-0">
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <div class="testimonial-icon">
+            <i class="bi bi-quote"></i>
+            </div>
+          <img src="./images/tete3.jpg" class="d-block m-auto rounded-circle img-thumbnail" alt="...">
+          <div class="py-3">
+            <h5 class="temoignage-auteur">Raphal LINDER</h5>
+            <p class="text-temoignage"><i>"Some representative placeholder content for the first slide."</i></p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div class="testimonial-icon">
+            <i class="bi bi-quote"></i>
+            </div>
+          <img src="./images/tete1.jpg" class="d-block m-auto rounded-circle img-thumbnail" alt="...">
+          <div class="py-3">
+            <h5 class="temoignage-auteur">Raphal LINDER</h5>
+            <p class="text-temoignage"><i>"Some representative placeholder content for the first slide."</i></p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div class="testimonial-icon">
+            <i class="bi bi-quote"></i>
+            </div>
+          <img src="./images/tete2.jpg" class="d-block m-auto rounded-circle img-thumbnail" alt="...">
+          <div class="py-3">
+            <h5 class="temoignage-auteur">Raphal LINDER</h5>
+            <p class="text-temoignage"><i>"Some representative placeholder content for the first slide."</i></p>
+          </div>
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+  </div>
+</div>
+
+</section>
+<a class="btn btn-danger" href="#accueil" id="scroll">
+<i class="bi bi-chevron-up"></i>
+</a>
 
 </main>
 
