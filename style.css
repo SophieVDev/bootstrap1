@@ -57,10 +57,20 @@
 cursor: pointer;
 }
 
+
 .btn-social-share{
     border-radius: 50%;
     width: 40px;
     height: 40px;
+}
+
+.img-woman{
+    padding: 0.25rem;
+    background-color: #fff;
+    border: 1px solid var(--bs-border-color);
+    border-radius: 0.375rem;
+    max-width: 100% !important;
+    height: auto  !important; 
 }
 
 .all-competences .card-img-top{
@@ -95,6 +105,7 @@ a.nav-link.active{
 #temoignages{
 padding-bottom: 100px !important;
 }
+
 
 .img-thumbnail {
     padding: 0.25rem;
@@ -160,6 +171,18 @@ max-width: 100%;
 .contact-container .contact-header h3{
     font-weight: 300;
     font-size: 20px;   
+}
+
+
+.contact-body a{
+    color: white;
+    text-decoration: none;
+}
+
+.contact-body a:hover{
+    color: white;
+   text-decoration: underline;
+   cursor: pointer;
 }
 
 .contact-container .contact-header a, .contact-container .contact-body {
